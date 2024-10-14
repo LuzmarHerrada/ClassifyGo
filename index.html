@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Classifygo - Script de anuncios clasificados y listados de directorios en PHP</title>
+    <meta name="description" content="El script de anuncios clasificados ClassifyGo se puede utilizar para crear varios tipos de sitios web clasificados, incluidas bolsas de trabajo, anuncios clasificados de automóviles, listados de bienes raíces y mercados de compra/venta." />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/navigation.css">		
+</head>
+<body>
+	<a href="https://api.whatsapp.com/send?phone=525545113803&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a> 
+	<!-- Page Wrapper -->
+	<div id="page">
+		
+		<!-- Header -->
+		<header class="header-v3">
+			<div class="top-header bg-[#ffc800]">
+                <div class="container flex justify-center items-center">
+                    <ul class="contacts">
+                        <li class="text-[#303030]"><a href="mailto:info@company.com"><i class="fa fa-envelope text-[#303030]"></i>Correo electrónico: support@classifygo.com</a></li>
+                        <li class="text-[#303030]"><i class="fa fa-phone text-[#303030]"></i>+90(541) 614 49 85</li>
+                        <li class="text-[#303030]"><i class="fa fa-laptop text-[#303030]"></i>Horario de trabajo Días laborables: 10.00 - 19.00</li>
+                        <li class="text-[#303030]"><i class="fa fa-whatsapp"></i>Soporte rápido de WhatsApp: +90 541 614 4985</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom-header bg-[#303030]">
+            	<div class="container flex lg:justify-center">
+            		<span class="mobile-navigation-toggle hidden-md hidden-lg">
+						<span class="menui top-menu"></span>
+						<span class="menui mid-menu"></span>
+						<span class="menui bottom-menu"></span>
+					</span>
+
+					
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/Logo.png" class="cursor-pointer p-5 bg-[#ffc800]"></img>
+						</a>					</div>
+					<nav class="main-nav">
+					    <ul class="menu">
+					        <li class="menu-item menu-item-has-children current-menu-parent">
+					            <a href="/index.html">Inicio</a>
+					               
+					        </li>
+					        <li class="menu-item">
+					            <a href="">SOBRE NOSOTROS</a>
+					            <ul class="sub-menu">
+					                <li class="menu-item">
+					                    <a href="/nosotros.html">Sobre Nosotros</a>
+					                </li>
+					                <li class="menu-item">
+					                    <a href="/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+					                </li>
+					            </ul>  
+					        </li>
+							<li class="menu-item menu-item-has-children">
+							    <a href="#">GUION DE ANUNCIOS CLASIFICADOS</a>
+							    <ul class="sub-menu">
+							        <li class="menu-item">
+							             <a href="listados.html">Listados de directorios de empresas</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="tema-premium.html">Tema Premium de ClassifyGo</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="listados-de-bienes-raices.html">Script de listado de bienes raíces en PHP</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="tema-script.html">Tema de Script Plus clasificado</a>
+							        </li>
+							        <li class="menu-item">
+							            <a href="script-de-bolsa.html">Script de bolsa de trabajo de PHP</a>
+							        </li>
+							    </ul>
+							</li>
+							<li class="menu-item menu-item-has-children">
+							    <a href="/contacto.html">Contacto</a>
+							</li>
+					        <li class="menu-item menu-item-has-children">
+					            <a class="text-[#46bf0d]" href="https://wa.me/905416144985">WhatsApp</a>
+					        </li>
+					    </ul>
+					</nav>
+            	</div>
+            </div>
+		</header>
+
+		<!-- Main Content -->
+		<div class="content-wrapper">
+			<section class="hero-section pb-20">
+				<h2 class="hidden">Slider Section</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="rev_slider_wrapper">
+								<div class="fullwidth_slider rev_slider" data-height="750">
+									<ul>	
+										<li data-transition="fade">			
+											<img src="img/slider-background-1.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+											<div class="tp-caption WhiteTtl tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="-50" 
+												data-whitespace="nowrap"
+												data-transform_idle="o:1;"
+	                                            data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+	                                            data-transform_out="opacity:0;s:500;s:500;"
+	                                            data-start="1300"
+												data-responsive_offset="on">ClassifyGo - Script de anuncios clasificados en PHP
+											</div>
+											
+											<div class="tp-caption WhiteTtlp tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="30" 
+												data-whitespace="pre"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+												data-transform_out="opacity:0;s:500;s:500;"
+												data-start="1700" 
+												data-responsive_offset="on">Nuestro script de anuncios clasificados incluye los tipos más buscados: venta, autos, propiedades, servicios y empleos. Puede agregar más desde el back-end.
+											</div>
+
+											<div class="tp-caption tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="92"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                                data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                                data-start="2000"
+												data-responsive_offset="on" 
+												><a class="btn yellow medium" href="#">Más Información</a>
+											</div>
+											
+										</li>	
+										<li data-transition="fade">			
+											<img src="img/slider-background-2.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+											<div class="tp-caption WhiteTtl tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="-50" 
+												data-whitespace="nowrap"
+												data-transform_idle="o:1;"
+	                                            data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+	                                            data-transform_out="opacity:0;s:500;s:500;"
+	                                            data-start="1300"
+												data-responsive_offset="on">ClassifyGo: aplicación móvil gratuita para Android
+											</div>
+											
+											<div class="tp-caption WhiteTtlp tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="30" 
+												data-whitespace="pre"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+												data-transform_out="opacity:0;s:500;s:500;"
+												data-start="1700" 
+												data-responsive_offset="on">La aplicación ClassifyGo Webview se ofrece de forma gratuita a todos nuestros clientes que utilizan nuestro software.
+											</div>
+
+											<div class="tp-caption tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="92"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                                data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                                data-start="2000"
+												data-responsive_offset="on" 
+												><a class="btn yellow medium" href="#">Más Información</a>
+											</div>
+											
+										</li>
+										<li data-transition="fade">			
+											<img src="img/slider-background-3.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+											<div class="tp-caption WhiteTtl tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="-50" 
+												data-whitespace="nowrap"
+												data-transform_idle="o:1;"
+	                                            data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+	                                            data-transform_out="opacity:0;s:500;s:500;"
+	                                            data-start="1300"
+												data-responsive_offset="on">Tipos de anuncios populares
+											</div>
+											
+											<div class="tp-caption WhiteTtlp tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="30" 
+												data-whitespace="pre"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+												data-transform_out="opacity:0;s:500;s:500;"
+												data-start="1700" 
+												data-responsive_offset="on">Un script de anuncios clasificados se puede utilizar para crear varios tipos de sitios web clasificados, incluidos portales de empleo, anuncios clasificados de automóviles, listados de bienes raíces y mercados de compra/venta.
+											</div>
+
+											<div class="tp-caption tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="92"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                                data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                                data-start="2000"
+												data-responsive_offset="on" 
+												><a class="btn yellow medium" href="#">Más Información</a>
+											</div>
+										</li>
+										<li data-transition="fade">			
+											<img src="img/slider-background-4.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+											<div class="tp-caption WhiteTtl tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="-50" 
+												data-whitespace="nowrap"
+												data-transform_idle="o:1;"
+	                                            data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+	                                            data-transform_out="opacity:0;s:500;s:500;"
+	                                            data-start="1300"
+												data-responsive_offset="on">Software de listado de directorios PHP
+											</div>
+											
+											<div class="tp-caption WhiteTtlp tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="30" 
+												data-whitespace="pre"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+												data-transform_out="opacity:0;s:500;s:500;"
+												data-start="1700" 
+												data-responsive_offset="on">Sistema multilingüe (se puede agregar cualquier idioma fácilmente). Compatibilidad con idiomas árabe RTL, inglés, español y turco.
+											</div>
+
+											<div class="tp-caption tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="92"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                                data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                                data-start="2000"
+												data-responsive_offset="on" 
+												><a class="btn yellow medium" href="#">Más Información</a>
+											</div>
+											
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="nosotros" class="flex flex-col justify-center items-center py-20">
+				<h2 class="text-6xl">¿Por qué <strong>Nosotros?</strong></h2>
+				<img src="img/head_line.png" alt="head-line" class="mb-16">
+				<div class="flex flex-col lg:flex-row justify-center items-start lg:px-64">
+					<div class="flex flex-col justify-center items-center w-full lg:w-1/4 p-16">
+						<div class="w-fit p-3 rounded-full bg-[#f0f0f0] hover:bg-[#333333] hover:rotate-90 hover:text-[#ffc800] transition-all duration-1000">
+							<div class="p-16 border-white border-dashed border-2 rounded-full">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+									<path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+								</svg>
+							</div>
+						</div>
+						<h2 class="text-3xl font-bold p-4">Apoyo técnico</h2>
+						<p class="text-justify font-thin">Brindamos soporte técnico instantáneo durante el horario laboral para todos los problemas que surjan del software.</p>
+					</div>
+					<div class="flex flex-col justify-center items-center w-full lg:w-1/4 p-16">
+						<div class="w-fit p-3 rounded-full bg-[#f0f0f0] hover:bg-[#333333] hover:rotate-90 hover:text-[#ffc800] transition-all duration-1000">
+							<div class="p-16  border-white border-dashed border-2 rounded-full">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+									<path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0"/>
+								</svg>
+							</div>
+						</div>
+						<h2 class="text-3xl font-bold p-4">Diseño responsivo para dispositivos móviles</h2>
+						<p class="text-justify font-thin">Ofrecemos un uso cómodo con nuestros diseños compatibles según las pantallas de computadoras, dispositivos móviles y tabletas.</p>
+					</div>
+					<div class="flex flex-col justify-center items-center w-full lg:w-1/4 p-16">
+						<div class="w-fit p-3 rounded-full bg-[#f0f0f0] hover:bg-[#333333] hover:rotate-90 hover:text-[#ffc800] transition-all duration-1000">
+							<div class="p-16  border-white border-dashed border-2 rounded-full">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8"/>
+								</svg>
+							</div>
+						</div>
+						<h2 class="text-3xl font-bold p-4">10 años de experiencia</h2>
+						<p class="text-justify font-thin">Seguimos superando los límites del servicio de calidad ofreciéndole un servicio de calidad con la experiencia que hemos adquirido a lo largo de muchos años.</p>
+					</div>
+					<div class="flex flex-col justify-center items-center w-full lg:w-1/4 p-16">
+						<div class="w-fit p-3 rounded-full bg-[#f0f0f0] hover:bg-[#333333] hover:rotate-90 hover:text-[#ffc800] transition-all duration-1000">
+							<div class="p-16  border-white border-dashed border-2 rounded-full">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+									<path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/>
+								</svg>
+							</div>
+						</div>
+						<h2 class="text-3xl font-bold p-4">Entrega rápida</h2>
+						<p class="text-justify font-thin">Realizamos la instalación y entregamos las llaves el mismo día. Este proceso demora como máximo 1 hora en horario laboral.</p>
+					</div>
+				</div>
+			</section>
+			<section id="script" class="flex flex-col justify-center items-center py-20">
+				<h2 class="text-6xl text-center p-8 pb-4 font-bold">Script de anuncios clasificados en PHP y script de listado de directorios en PHP</h2>
+				<img src="img/head_line.png" alt="head-line" class="mb-16">
+				<div class="flex flex-col lg:flex-row justify-center items-center">
+					<div class="flex flex-col justify-center items-center lg:w-1/4">
+						<img src="img/classified-script.jpg" alt="classified-script" class="p-10 w-full h-full lg:w-[35rem] lg:h-[40rem] transition-all duration-1000 hover:rotate-[360deg]">
+						<a href="" class="text-[#0087c6] font-bold text-4xl text-center">Tema Script Plus para anuncios clasificados</a>
+						<p class="text-5xl font-bold p-4">$149</p>
+					</div>
+					<div class="flex flex-col justify-center items-center lg:w-1/4">
+						<img src="img/classified-script-1.jpg" alt="classified-script" class="p-10 w-full h-full lg:w-[35rem] lg:h-[40rem] transition-all duration-1000 hover:rotate-[360deg]">
+						<a href="" class="text-[#0087c6] font-bold text-4xl text-center">Tema premium de script de anuncios clasificados</a>
+						<p class="text-5xl font-bold p-4">$69</p>
+					</div>
+					<div class="flex flex-col justify-center items-center lg:w-1/4">
+						<img src="img/classified-script-2.jpg" alt="classified-script" class="p-10 w-full h-full lg:w-[35rem] lg:h-[40rem] transition-all duration-1000 hover:rotate-[360deg]">
+						<a href="" class="text-[#0087c6] font-bold text-4xl text-center">Script de listado de directorio de empresas en PHP</a>
+						<p class="text-5xl font-bold p-4">$69</p>
+					</div>
+					<div class="flex flex-col justify-center items-center lg:w-1/4">
+						<img src="img/classified-script-3.jpg" alt="classified-script" class="p-10 w-full h-full lg:w-[35rem] lg:h-[40rem] transition-all duration-1000 hover:rotate-[360deg]">
+						<a href="" class="text-[#0087c6] font-bold text-4xl text-center">RTL árabe - Script de anuncios clasificados de ClassifyGo</a>
+						<p class="text-5xl font-bold p-4">$69</p>
+					</div>
+				</div>
+				<div class="flex flex-col lg:flex-row justify-center items-center">
+					<div class="flex flex-col justify-center items-center lg:w-1/4">
+						<img src="img/classified-script-4.jpg" alt="classified-script" class="p-10 w-full h-full lg:w-[35rem] lg:h-[40rem] transition-all duration-1000 hover:rotate-[360deg]">
+						<a href="" class="text-[#0087c6] font-bold text-4xl text-center">Tema premium de script de anuncios clasificados</a>
+						<p class="text-5xl font-bold p-4">$69</p>
+					</div>
+					<div class="flex flex-col justify-center items-center lg:w-1/4">
+						<img src="img/classified-script5.jpg" alt="classified-script" class="p-10 w-full h-full lg:w-[35rem] lg:h-[40rem] transition-all duration-1000 hover:rotate-[360deg]">
+						<a href="" class="text-[#0087c6] font-bold text-4xl text-center">Script de listado de directorio de empresas en PHP</a>
+						<p class="text-5xl font-bold p-4">$69</p>
+					</div>
+					<div class="flex flex-col justify-center items-center lg:w-1/4">
+						<img src="img/classified-script-6.jpg" alt="classified-script" class="p-10 w-full h-full lg:w-[35rem] lg:h-[40rem] transition-all duration-1000 hover:rotate-[360deg]">
+						<a href="" class="text-[#0087c6] font-bold text-4xl text-center">RTL árabe - Script de anuncios clasificados de ClassifyGo</a>
+						<p class="text-5xl font-bold p-4">$69</p>
+					</div>
+				</div>
+			</section>
+			<section id="servicios" class="bg-[#141313] p-20">
+				<div class="flex lg:flex-row flex-col justify-center items-center">
+					<p class="lg:w-1/4 text-4xl text-[#e6d693] font-light">Nuestros <strong class="font-bold">Servicios</strong></p>
+					<div class="flex flex-col items-center m-6 lg:w-1/4">
+						<i class="fa fa fa-mobile text-[45px] text-[#e6d693]"></i>
+						<p class="text-[#e6d693] text-3xl p-4">Sofware clasificado</p>
+						<img src="img/line-sp.png" alt="">
+					</div>
+					<div class="flex flex-col items-center m-6 lg:w-1/4">
+						<i class="fa fa-wrench text-[45px] text-[#e6d693]"></i>
+						<p class="text-[#e6d693] text-3xl p-4">Tema Premium de ClassifyGo</p>
+						<img src="img/line-sp.png" alt="">
+					</div>
+					<div class="flex flex-col items-center m-6 lg:w-1/4">
+						<i class="fa fa-google text-[45px] text-[#e6d693]"></i>
+						<p class="text-[#e6d693] text-3xl p-4">Software de listado de directorios</p>
+						<img src="img/line-sp.png" alt="">
+					</div>
+					<div class="flex flex-col items-center m-6 lg:w-1/4">
+						<i class="fa fa-support text-[45px] text-[#e6d693]"></i>
+						<p class="text-[#e6d693] text-3xl p-4">Soporte técnico 24 horas al día, 7 días a la semana</p>
+						<img src="img/line-sp.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section id="guion" class="flex flex-col justify-center items-center p-20">
+				<h1 class="text-6xl text-center p-8 pb-4 font-bold">El mejor guión clasificado</h1>
+				<img src="img/head_line.png" alt="" class="mb-16">
+				<p class="text-3xl text-center lg:px-20 pb-10">Con nuestros scripts de listados, cualquiera puede crear su propio sitio web de anuncios clasificados sin la necesidad de grandes habilidades de programación ni codificación manual.</p>
+				<p class="text-3xl text-center lg:px-20 pb-10">Un script de anuncios clasificados se puede utilizar para crear varios tipos de sitios web de clasificados, incluidos portales de empleo, clasificados de automóviles, listados de bienes raíces y mercados de compra/venta.</p>					
+				<p class="text-3xl text-center lg:px-20 pb-10">Las empresas también pueden utilizarlos para crear sitios web de anuncios clasificados internos para sus empleados.
+					En general, un script de anuncios clasificados es una herramienta poderosa que puede ayudar a los propietarios de sitios web a crear y administrar un sitio web de anuncios clasificados con habilidades técnicas y una inversión mínimas.</p>
+				<p class="text-3xl text-center px-20 pb-10">Nuestro software de anuncios clasificados ofrece URL optimizadas para SEO, metaetiquetas sociales y canónicas, posibilidad de compartir y de generar metadescripciones, palabras clave y títulos de anuncios con valores de campo.
+					La capacidad de gestionar tipos de anuncios, categorías, campos, formularios de registro y envío de anuncios, moneda, ubicación e idiomas hace de ClassifyGo un script de anuncios clasificados extremadamente flexible.</p>
+				<img src="img/features.png" alt="">
+				<p class="text-3xl text-center lg:px-20 py-10">Con la ayuda de nuestro mejor script clasificado y script de trabajos, también mostrará fácilmente scripts de anuncios clasificados geográficos cms o anuncios clasificados PHP.</p>
+				<p class="text-3xl text-center lg:px-20 pb-10">Este script clasificado premium le ayudará a utilizar un script PHP clasificado para entregar el resultado necesario en un corto período de tiempo.</p>	
+				<p class="text-3xl text-center lg:px-20 pb-10">Una funcionalidad de campos personalizados altamente configurable es lo que distingue a ClassifyGo de otros scripts de clasificados.</p>
+				<p class="text-3xl text-center lg:px-20 pb-10">Puede crear campos personalizados relacionados con categorías, definir qué campos personalizados se pueden usar en los filtros de búsqueda, definir qué campos personalizados se muestran en los resultados de las listas, organizar campos personalizados en grupos y mucho más.</p>
+			</section>
+			<section id="preguntas" class="flex flex-col justify-center items-center p-20 bg-[#fafafa]">
+				<h1 class="text-6xl text-center p-8 pb-4 font-bold">Preguntas frecuentes</h1>
+				<img src="img/head_line.png" alt="" class="mb-16">
+				<div class="flex lg:flex-row flex-col lg:px-72">
+					<div class="bg-white lg:w-1/2 m-12 px-6 py-10">
+						<span class="flex font-bold text-3xl justify-between">
+							¿Emite facturas por sus ventas?
+							<i class="fa fa-chevron-down"></i>
+						</span>
+						<p class="pt-8 text-3xl">Sí, todas nuestras ventas se facturan. Su factura se envía a su dirección de correo electrónico como factura electrónica.</p>
+					</div>
+					<div class="bg-white lg:w-1/2 m-12 px-6 py-10">
+						<span class="flex font-bold text-3xl justify-between">
+							¿Ofrecen soporte para el producto que hemos comprado?
+							<i class="fa fa-chevron-down"></i>
+						</span>
+						<p class="pt-8 text-3xl">Por supuesto, ofrecemos soporte gratuito para los problemas que surjan con los productos que haya adquirido.</p>
+					</div>
+				</div>
+				<div class="flex lg:flex-row flex-col lg:px-72">
+					<div class="bg-white lg:w-1/2 m-12 px-6 py-10">
+						<span class="flex font-bold text-3xl justify-between">
+							¿Podemos utilizar el software que hemos adquirido en más de un dominio?
+							<i class="fa fa-chevron-down"></i>
+						</span>
+						<p class="pt-8 text-3xl">El software tiene licencia para la dirección de dominio y solo puedes usarlo en el dominio con licencia.</p>
+					</div>
+					<div class="bg-white lg:w-1/2 m-12 px-6 py-10">
+						<span class="flex font-bold text-3xl justify-between">
+							¿Los códigos del software están encriptados? ¿Podemos realizar cambios en el software?
+							<i class="fa fa-chevron-down"></i>
+						</span>
+						<p class="pt-8 text-3xl">Nuestro software es 99 % de código abierto.</p>
+					</div>
+				</div>
+				<div class="flex lg:flex-row flex-col lg:px-72">
+					<div class="bg-white lg:w-1/2 m-12 px-6 py-10">
+						<span class="flex font-bold text-3xl justify-between">
+							¿Cómo y cuándo se entrega el software?
+							<i class="fa fa-chevron-down"></i>
+						</span>
+						<p class="pt-8 text-3xl">El software que ha adquirido se instala y se entrega dentro del horario laboral posterior al pago.</p>
+					</div>
+					<div class="bg-white lg:w-1/2 m-12 px-6 py-10">
+						<span class="flex font-bold text-3xl justify-between">
+							¿Qué se necesita para que el software funcione?
+							<i class="fa fa-chevron-down"></i>
+						</span>
+						<p class="pt-8 text-3xl">El servidor debe tener instalado el Hosting Cpanel de Linux y el cargador Ioncube.</p>
+					</div>
+				</div>
+				<a href="">VER TODO EL CONTENIDO</a>
+			</section>
+			<section id="testimonios" class="bg-[#fcaf3a] flex flex-col justify-center items-center p-20 bg-[#fafafa]">
+				<h1 class="text-6xl text-center p-8 pb-4 font-bold">Testimonios de clientes</h1>
+				<img src="img/head_line.png" alt="" class="mb-16">
+				<i class="fa fa-quote-left text-[45px]" aria-hidden="true"></i>
+				<div class="flex lg:flex-row flex-col">
+					<div class="lg:w-1/3">
+						<p class="text-3xl text-justify lg:px-20 pb-10 text-[#333]">Compré el software para anuncios inmobiliarios y de autos en mi área. Es muy bueno en SEO. Además, me gustaría agradecerles por la aplicación para Android que me regalaron.</p>
+						<p class="text-3xl text-center lg:px-20 pb-10 text-black">Lusiana Setiani / Reino Unido</p>
+					</div>
+					<div class="lg:w-1/3">
+						<p class="text-3xl text-justify lg:px-20 pb-10 text-[#333]">Este es un excelente script de anuncios clasificados. ¡Y la ayuda que recibí del equipo de soporte de Classifygo es excelente! ¡Buen trabajo, todos!</p>
+						<p class="text-3xl text-center lg:px-20 pb-10 text-black">Brian Giles / Estados Unidos</p>
+					</div>
+					<div class="lg:w-1/3">
+						<p class="text-3xl text-justify lg:px-20 pb-10 text-[#333]">Trabajar con el equipo de ClassifyGo fue una experiencia increíble. Hicieron realidad mi sueño y me ayudaron a impulsar mi negocio de venta de productos en línea.</p>
+						<p class="text-3xl text-center lg:px-20 pb-10 text-black">Steven Cessario / Estados Unidos</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<!-- Footer -->
+		<footer>
+			<div class="bg-[#050505] flex flex-col lg:flex-row justify-between p-10 lg:p-40">
+				<div class="p-10">
+					<img src="img/logo1.png" alt="">
+					<div class="flex">
+						<ul class="contact-info clean-list">
+							<li class="flex items-center">
+								<i class="text-white fa fa-globe"></i>
+								<p class="m-4 text-white">Estambul / Turquía</p>
+							</li>
+							<li class="flex items-center">
+								<i class="text-white fa fa-phone" title="Teléfono"></i>
+								<p class="m-4 text-white">+90541 614 4985</p>
+							</li>
+						</ul>
+						<ul class="contact-info clean-list border-l pl-6">
+							<li class="flex items-center">
+								<i class="text-white fa fa-whatsapp" title="Soporte de WhatsApp"></i>
+								<p class="m-4 text-white">+90541 614 4985</p>
+							</li>
+							<li class="flex items-center">
+								<i class="text-white fa fa-envelope" style="font-size:18px;"></i>
+								<p class="m-4 text-white"><a href="mailto:email@gt3themes.com">email@gt3themes.com</a></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="p-10">
+					<div class="widget widget_recent_posts">
+						<h4 class="font-bold pb-10 text-3xl text-white">CORPORATIVO</h4>
+						<div class="widget-body">
+							<ul class="recent-posts clean-list">
+								<li>
+									<h4><a href="#">Sobre Nosotros</a></h4>
+								<li>
+									<h4><a href="#">Preguntas Frecuentes</a></h4>
+								</li>
+								<li>
+									<h4><a href="#">Script de listado de bienes raíces en PHP</a></h4>
+								</li>
+								<li>
+									<h4><a href="#">Tema de Script Plus clasificado</a></h4>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="p-10">
+					<div class="widget widget_recent_posts">
+						<h4 class="font-bold pb-10 text-3xl text-white">CAMPO DE GOLF</h4>
+						<div class="widget-body">
+							<ul class="recent-posts clean-list">
+								<li>
+									<h4><a href="#">Guión de anuncios clasificados</a></h4>
+								<li>
+									<h4><a href="#">Listado de directorios de empresas</a></h4>
+								</li>
+								<li>
+									<h4><a href="#">Tema Premium de ClassifyGo</a></h4>
+								</li>
+								<li>
+									<h4><a href="#">Contacto</a></h4>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>						
+
+				<div class="p-10">
+					<li>
+						<span class="font-bold pb-10 text-3xl text-white">Siguenos</span>
+						<ul class="socials clean-list flex">
+							<li><a href="#"><i class="fa fa-facebook-square text-white m-4 text-4xl"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter-square text-white m-4 text-4xl"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram text-white m-4 text-4xl"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube-play text-white m-4 text-4xl"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus-square text-white m-4 text-4xl"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss text-white m-4 text-4xl"></i></a></li>
+						</ul>
+					</li>
+				</div>
+			</div>
+
+			<div class="bottom-footer">
+				<div class="container">
+					<p class="alignleft align-left copyright">
+						Copyright © 2020 Bricks. All Rights Reserved.
+					</p>
+
+					<p class="alignright align-right copyright">
+						Premium Construction HTML Template by <a href="http://gt3themes.com">GT3themes.com</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/nouislider.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- rs-plugin extensions -->
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+	<!-- //rs-plugin extensions -->
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/isotope.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>
